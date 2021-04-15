@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webcam-photo</title>
+  <style>
+	body {
+      margin: 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-right: 50px;
+      padding-left: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <script defer src="script.js"></script>
+
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+</head>
+<body>
+	<!-- Stream video via webcam -->
+	<div class="video-wrap" width="320" height="320">
+		<video id="video" playsinline autoplay></video>
+	</div>
+
+	<!-- Trigger canvas web API -->
+	<div class="controller">
+		<button id="snap">Capturar</button>
+	</div>
+
+	<!-- Webcam video snapshot -->
+	<canvas id="canvas" width="320" height="320"></canvas>
+</body>
+</html>
